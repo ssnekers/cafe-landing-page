@@ -2,66 +2,102 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>Coffee Time</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee House</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="hero">
-  <h1>Coffee Time ☕</h1>
-  <p>Кава, яку хочеться знову і знову</p>
-  <a href="#menu" class="btn">Переглянути меню</a>
+<header class="header">
+  <div class="logo">Coffee House ☕</div>
+  <nav>
+    <a href="#menu">Меню</a>
+    <a href="#about">Про нас</a>
+    <a href="#reviews">Відгуки</a>
+    <a href="#contact" class="btn-small">Забронювати</a>
+  </nav>
 </header>
 
-<section class="about">
-  <h2>Про нас</h2>
-  <p>
-    Coffee Time — це затишне кафе в центрі міста.
-    Ми варимо каву з добірних зерен та готуємо десерти щодня.
-  </p>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Атмосфера, яку хочеться відчути</h1>
+    <p>Авторська кава • Десерти • Затишний простір</p>
+    <a href="#contact" class="btn-primary">Забронювати столик</a>
+  </div>
 </section>
 
-<section class="gallery">
-  <h2>Наша атмосфера</h2>
-  <div class="images">
-    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Кава">
-    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Кав'ярня">
-    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Кава і десерт">
-    <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" alt="Бариста">
+<section class="advantages">
+  <div class="adv">
+    <h3>🌱 100% арабіка</h3>
+    <p>Відбірне зерно з обсмаженням щотижня</p>
+  </div>
+  <div class="adv">
+    <h3>🍰 Власна випічка</h3>
+    <p>Десерти готуємо щодня</p>
+  </div>
+  <div class="adv">
+    <h3>📶 Wi-Fi та розетки</h3>
+    <p>Ідеально для роботи та зустрічей</p>
   </div>
 </section>
 
 <section id="menu" class="menu">
-  <h2>Меню</h2>
-  <div class="menu-items">
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd" alt="Еспресо">
-      <h3>Еспресо</h3>
-      <p>40 грн</p>
-    </div>
+  <h2>Наше меню</h2>
 
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1509785307050-d4066910ec1e" alt="Лате">
+  <div class="menu-grid">
+    <div class="menu-card">
+      <img src="img/coffee1.jpg">
       <h3>Лате</h3>
-      <p>55 грн</p>
+      <p>Ніжна молочна кава</p>
+      <span>90 грн</span>
     </div>
 
-    <div class="item">
-      <img src="https://images.unsplash.com/photo-1505253716362-afaea1c4f0e5" alt="Десерт">
-      <h3>Десерти</h3>
-      <p>від 60 грн</p>
+    <div class="menu-card">
+      <img src="img/coffee2.jpg">
+      <h3>Капучино</h3>
+      <p>Класика з ідеальною пінкою</p>
+      <span>85 грн</span>
+    </div>
+
+    <div class="menu-card">
+      <img src="img/dessert.jpg">
+      <h3>Чізкейк</h3>
+      <p>Домашній, ніжний</p>
+      <span>110 грн</span>
     </div>
   </div>
 </section>
 
-<section class="location">
-  <h2>Де ми знаходимось</h2>
-  <p>📍 Центр міста</p>
-  <p>🕗 Пн–Нд 8:00–21:00</p>
+<section class="promo">
+  <h2>☀ Ранкова акція</h2>
+  <p>З 8:00 до 11:00 — знижка 20% на каву</p>
+  <a href="#contact" class="btn-primary">Скористатись</a>
+</section>
+
+<section id="reviews" class="reviews">
+  <h2>Відгуки гостей</h2>
+  <div class="review-box">
+    <p>“Найкраща кава в місті! Атмосфера супер.”</p>
+    <strong>— Олена</strong>
+  </div>
+  <div class="review-box">
+    <p>“Затишно, швидке обслуговування.”</p>
+    <strong>— Андрій</strong>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Забронювати столик</h2>
+  <form>
+    <input type="text" placeholder="Ваше ім'я">
+    <input type="tel" placeholder="Телефон">
+    <input type="number" placeholder="Кількість гостей">
+    <button type="submit">Забронювати</button>
+  </form>
 </section>
 
 <footer>
-  <p>© Coffee Time</p>
+  <p>📍 Ваше місто | ☎ +380...</p>
 </footer>
 
 </body>
