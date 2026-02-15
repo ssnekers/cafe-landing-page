@@ -159,3 +159,45 @@ footer {
   text-align: center;
   background: black;
 }
+/* ABOUT */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 100px 10%;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about img {
+  width: 400px;
+  border-radius: 20px;
+}
+
+/* GALLERY */
+.gallery {
+  padding: 100px 10%;
+  text-align: center;
+  background: #1a1a1a;
+}
+
+.gallery-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-grid img {
+  width: 300px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
